@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     graphql`
       query {
         site {
-          siteMetaData {
+          siteMetadata {
             title
           }
         }
@@ -33,7 +33,7 @@ export default function Layout({ children }) {
             font-style: normal;
           `}
         >
-          {data.site.siteMetaData.title}
+          {data.site.siteMetadata.title}
         </h3>
       </Link>
       <Link
